@@ -13,6 +13,7 @@ img {
 body {
   font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
+  /* background-color: #f0fbff; */
 }
 
 /* Header styling ends here */
@@ -51,8 +52,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
+  background-color: #f0fbff;
   justify-content: center;
   padding-top: 5rem;
+  background-size: 100vw;
 }
 
 #hero-container {
@@ -99,6 +102,15 @@ body {
   max-width: 300px;
   margin-inline: auto;
   padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 650px) {
+  #hero {
+    background-image: url("/images/bg-hero-desktop.svg");
+  }
+  #hero-container {
+    flex-direction: row;
+  }
 }
 
 /* Hero Section styling ends here */
